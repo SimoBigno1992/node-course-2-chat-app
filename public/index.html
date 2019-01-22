@@ -14,17 +14,25 @@
           <h3>Join a Chat</h3>
         </div>
         <div class="form-field">
-          <labe>Display name</label>
+          <label>Username</label>
             <input type="text" name="name" autofocus/>
         </div>
         <div class="form-field">
-          <label>Room name</label>
+          <label>New Room Name</label>
           <input type="text" name="room">
+        </div>
+        <div class="form-field">
+          <label id="rooms" hidden="true">Active Rooms</label>
         </div>
         <div class="form-field">
           <button>Join</button>
         </div>
       </form>
     </div>
+    <script src="/socket.io/socket.io.js" ></script>
+    <script src="/js/libs/jquery-3.3.1.min.js" ></script>
+    <script src="/js/libs/moment.js"></script>
+    <script src="/js/libs/mustache.js"></script>
+    <script src="/js/index.js"></script>
   </body>
 </html>

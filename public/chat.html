@@ -11,7 +11,7 @@
   <body class="chat">
 
     <div class="chat__sidebar">
-      <h3>People</h3>
+      <div id="room-title"></div>
       <div id="users"></div>
     </div>
 
@@ -27,7 +27,7 @@
       </div>
     </div>
 
-    <script id="message-template" type="text/teplate">
+    <script id="message-template" type="text/template">
       <li class="message">
         <div class="message__title">
           <h4>{{from}}</h4>
@@ -39,7 +39,7 @@
       </li>
     </script>
 
-    <script id="message-location-template" type="text/teplate">
+    <script id="message-location-template" type="text/template">
       <li class="message">
         <div class="message__title">
           <h4>{{from}}</h4>
