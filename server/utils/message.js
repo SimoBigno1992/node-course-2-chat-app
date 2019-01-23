@@ -16,6 +16,4 @@ const generateLocationMessage = (from, latitude, longitude) => {
   };
 };
 
-//robbbberto culo
-
 module.exports = {generateMessage, generateLocationMessage};
