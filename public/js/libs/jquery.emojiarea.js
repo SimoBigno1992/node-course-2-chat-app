@@ -577,7 +577,7 @@
     this.$menu.attr('data-type', 'menu');
     this.$menu.hide();
 
-    this.$itemsTailWrap = $('<div class="emoji-items-wrap1"></div>')
+    this.$itemsTailWrap = $('<div class="emoji-items-wrap1" style="margin-right:-10px;"></div>')
         .appendTo(this.$menu);
     this.$categoryTabs = $(
         '<table class="emoji-menu-tabs"><tr>'

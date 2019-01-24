@@ -50,6 +50,7 @@ img.emoji {
 
 .emoji-picker-container {
     position: relative;
+    width: 95%;
 }
 
 .emoji-picker-icon {
@@ -105,6 +106,8 @@ img.emoji {
     transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
     -webkit-user-select: text;
     word-wrap: break-word;
+    width: 100%;
+    background: white;
 }
 
 .emoji-wysiwyg-editor.parent-has-scroll {
@@ -125,10 +128,10 @@ img.emoji {
 
 .emoji-menu {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 37px;
+    right: -10px;
     z-index: 999;
-    width: 225px;
+    width: 282px;
     overflow: hidden;
     border: 1px #dfdfdf solid;
     -webkit-border-radius: 3px;
@@ -161,13 +164,13 @@ img.emoji {
     display: inline-block;
     width: 24px;
     height: 29px;
-    background: url('../img/IconsetSmiles.png') no-repeat;
+    background: url('../js/libs/img/IconsetSmiles.png') no-repeat;
     background-size: 42px 350px;
     border: 0;
 }
 
 .is_1x .emoji-menu-tabs .emoji-menu-tab {
-    background-image: url('../img/IconsetSmiles_1x.png');
+    background-image: url('../js/libs/img/IconsetSmiles_1x.png');
 }
 
 .emoji-menu-tabs .icon-recent { background-position: -9px -306px; }
@@ -214,6 +217,7 @@ img.emoji {
     position: relative;
     height: 174px;
     overflow: scroll;
+    width: 290px;
 }
 
 .emoji-menu .emoji-items {
