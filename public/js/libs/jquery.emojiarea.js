@@ -387,6 +387,14 @@
       self.updateBodyPadding(editorDiv);
     });
 
+    this.$editor.on("keyup", function(e) {
+      if(e.keyCode === 13) {
+        e.preventDefault();
+        console.log(jQuery('#message-form'));
+        jQuery('#message-form').submit();
+      }
+    });
+
     this.$editor.on("paste", function (e) {
       e.preventDefault();
       var content;
