@@ -16,7 +16,7 @@ socket.on('updateRoomsList', (rooms) => {
   const select = jQuery('<select></select>').attr('name', 'roomList');
 
   if(rooms.length > 0){
-    select.append(jQuery('<option></option>').text('').attr('name', ''));
+    select.append(jQuery('<option></option>').text('-- Choose a room --').attr('name', ''));
     rooms.forEach((room) => {
       select.append(jQuery('<option></option>').text(room).attr('name', 'room').attr('value', room));
     });

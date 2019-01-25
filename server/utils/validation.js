@@ -1,4 +1,5 @@
 const isRealString = (str) => {
+  console.log('ciao', str.trim().length > 0);
   return typeof str === 'string' && str.trim().length > 0;
 }
 
