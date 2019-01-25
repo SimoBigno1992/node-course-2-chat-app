@@ -23,7 +23,6 @@ io.on('connection', (socket) => {
   socket.emit('updateRoomsList', rooms.getRoomsList());
 
   socket.on('join', (params, callback) => {
-    console.log('1', params);
     if (!isRealString(params.name) || (!isRealString(params.room) && !params.roomList)){
       return callback('Name and room name are required!');
     }
